@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="https://gmail.com">Почта</a>
+            <a href="https://www.google.by/imghp?hl=ru&tab=wi&ei=vhlUWbSTCKLP6ASLtZK4AQ&ved=0EKouCBMoAQ">Картинки</a>
+            <a href="https://www.google.by/intl/ru/about/products/"><i class="material-icons">apps</i></a>
+            <a href="https://support.google.com/accounts/answer/1714464"><i class="material-icons mi-notifications">notifications</i></a>
+            <a href="https://gmail.com"><div class="header-photo"></div></a>
+        </header>
+
+        <main>
+            <div>
+                <div>Беларусь</div>
+            </div>
+            <div>
+                <input type="text" id="search_val">
+                <i class="material-icons">keyboard</i>
+            </div>
+            <div>
+                <button id="search">Поиск в Google</button>
+                <button>Мне повезёт!</button>
+            </div>
+            <p>Google.by предлагается на: <a href="https://www.google.by"> Беларуская</a></p>
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://www.google.by/intl/ru/ads/?fg=1">Реклама</a>
+                <a href="https://www.google.by/intl/ru/services/?fg=1">Для бизнеса</a>
+                <a href="https://www.google.by/intl/ru/about/">Всё о Google</a>
+            </div>
+            <div>
+                <a href="https://www.google.by/intl/ru/policies/privacy/?fg=1">Конфиденциальность</a>
+                <a href="https://www.google.by/intl/ru/policies/terms/regional.html">Условия</a>
+                <a href="https://www.google.by/preferences?hl=ru-BY&fg=1">Настройки</a>
+            </div>
+        </footer>
+
+        <script>
+            search.onclick = function(){
+                let val = document.getElementById('search_val').value.split(' ').join('+');
+                if (val!='')
+                    document.location.href = 'https://www.google.by/#q='+val;
+            }
+        </script>
+    </body>
+</html>
