@@ -121,6 +121,8 @@ button{
     font-weight: 700;
     border-radius: 2px;
     color: #777;
+    overflow: hidden;
+    outline: none;
 }
 button:hover{
     border: 1px solid #ccc;
