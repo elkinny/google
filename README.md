@@ -1,5 +1,3 @@
-# Google page
-
 <h1 align="center">
   <br>
   <a href="https://github.com/elkinny">
